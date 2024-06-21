@@ -4,7 +4,7 @@ import requests
 import json
 import sqlite3
 
-Holiday_API_KEY="e276e028-8307-40dd-9047-f8d8bfbff530"
+Holiday_API_KEY="YourAPIKEY"
 holiday_end_point=f'https://holidayapi.com/v1/holidays?key={Holiday_API_KEY}&country=US&year=2023'
 
 
@@ -29,7 +29,7 @@ def home(request):
         yelp_endpoint = f'https://api.yelp.com/v3/businesses/search?location={location}&term={business}'
         print(yelp_endpoint)
         headers = {
-            'Authorization': 'Bearer kNIRAZWPcyNLjG6XojNCSBZk1J6qZCAeA-4-jzBlpYKdVFUjydm5SVGFqVuTPSfkkYlidORZkcPVa8axsbM2ErZzQ9buHHlzgn4Q2viHQ4dcYPJqOKIaRHJFKRJzZnYx',
+            'Authorization': 'Bearer YourAPIKEY',
             'Content-Type': 'application/json'
         }
         response = requests.get(yelp_endpoint, headers=headers)
