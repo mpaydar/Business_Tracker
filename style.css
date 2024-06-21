@@ -1,0 +1,22 @@
+#form_div{
+    position: relative;
+    top: 200px;
+    display: block;
+
+   
+}
+
+#mainHeader{
+    position: relative;
+    top: 100px;
+}
+
+
+#businessForm{
+    display: block;
+}
+
+#ClosestBusiness{
+    position: relative;
+    top: 50px;
+}
